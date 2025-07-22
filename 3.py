@@ -3,18 +3,17 @@
 
 while True:
     try:
-        a=eval(input("請輸入a:，'exit'來結束程式:"))
+        a=input("請輸入a:")
+        if a == 'exit':
+            break
+        a = eval(a)
         b=eval(input("請輸入b:"))
-    except Exception as e:
-        print(f"輸入錯誤: {e}")
-        continue    
-    if a == "exit":
-        print("程式結束")
-        break
-    else:
         if b > a:
             print(f"{b}比{a}大{b-a}")
         elif b == a:
             print(f"{b}跟{a}一樣大")
         else:
-            print(f"{b}比{a}小{a-b}")
+            print(f"{b}比{a}小{a-b}") 
+            
+    except Exception as e:
+        print(f"輸入錯誤: {e}")
