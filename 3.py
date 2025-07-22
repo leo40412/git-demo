@@ -3,11 +3,14 @@
 
 while True:
     try:
-        a=input("請輸入a:")
+        a=input("請輸入a(exit:離開):")
+        # 判斷離開條件
         if a == 'exit':
             break
+        # 轉換成數值
         a = eval(a)
         b=eval(input("請輸入b:"))
+        # 判斷大小
         if b > a:
             print(f"{b}比{a}大{b-a}")
         elif b == a:
