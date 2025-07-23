@@ -106,3 +106,22 @@ git remote -v
 
 29.推送到雲端
 git push 
+
+30.下載專案
+git clone https://github.com/leo40412/git-demo
+
+31.git checkout -b branch-name (新增分支並切換)
+git branch branch-name
+git checkout branch-name
+
+32.雲端同步到本地端
+git pull
+
+33.刪除雲端分支
+git push --delete origin branch-name
+
+34.合併上一次的commit log
+git commit --amend
+
+35.強制推送
+git push -f
